@@ -1,0 +1,38 @@
+Dedieu-Meille Andréas
+L3 MIAGE
+UE Statistiques
+
+Graphique tiré du Figaro Tech & Web
+Article : "Ce graphique révèle l'état inquiétant de la publicité en ligne en France"
+26 Janvier 2017
+http://www.lefigaro.fr/secteur/high-tech/2017/01/26/32001-20170126ARTFIG00129-ce-graphique-revele-l-etat-inquietant-de-la-publicite-en-ligne-en-france.php#xtor=AL-201
+https://fr.news.yahoo.com/graphique-r%C3%A9v%C3%A8le-l%C3%A9tat-inqui%C3%A9tant-publicit%C3%A9-ligne-france-101227620.html
+
+
+
+Graphiques en général : 
+Représentation des couleurs : 3 couleurs : rouge, rouge clair, gris. 
+L'article considère ces stats comme le maaaaaaaal et la pub comme l'engance du démon, pour tout noter en rouge comme ça. En plus, la stats qui apparaît comme la plus grande est celle des réseaux sociaux/google, pourquoi on le met en rouge clair ? Et pourquoi pas d'autres couleurs leur écran RVB est resté coincé sur R ? Cela dit les daltoniens doivent être contents.
+Et pourquoi dans la légende des couleurs y'a un mélange français-anglais ? Ils ont oublié de finir de traduire ? Et c'est quoi Autres Leviers ?
+
+Je ferai remarquer que le figaro et Yahoo ont une chiée de pubs sur leur page, alors qu'ils racontent que la pub devient de plus en plus présente et malsaine pour nous les surfeurs. Faudrait ptet se remettre en cause les gars. C'est pas très sérieux.
+
+
+
+
+Graphique de Gauche :
+C'est une représentation du volume d'audiance dédupliqué. Perso, je sais pas ce que c'est, mais bon mouton que je suis, je me dis "olala y'a 98% des internautes français qui sont en lien avec un moteur de recherche ou les réseaux sociaux... sa fé bokou" A aucun moment l'article ne précise ce que ça représente. Et puis, 44M = 98% des Internautes, j'ai un peu du mal à croire à ces chiffres. On doit être pas loin de 70M de français au total, 44M ayant un ordinateur ET allant sur internet quotidiennement pour avoir un échantillon de population correct, ça me paraît beaucoup. Parce que si on compte Kévina la gourdasse qui joue à Candy Crush et qui considère avoir des pubs, l'analyse doit être facile à faire.
+EN fait on ne sait pas quels internautes on été sondés, et combien.
+
+Grapique du milieu :
+Part des investissements publicitaires. Alors la on a 68% de milions pour les réseaux sociaux. Hein ? On me dit dans l'oreillette que les pourcents ont pas de valeur ? Ah merde encore un coup du stagiaire. Bon sinon on a un +12% pour le rouge clair. Pourquoi on a pas un -12% quelque part ? Parce que je pense pas que l'année dernière on était à 88% au total, pour arriver à un bô graphe de 100% cette année. Je pense que c'est des données non représentées, pas assez "buzzable" pour le créateur du graphe.
+Et puis pourquoi le pourcent dans la case grise est en blanc, alors qu'à droite c'est du noir ? Il peuvent pas se relire ? Purée il est costaud le stagiaire cette année.
+
+
+Graphique de Droite :
+Là on finit en beauté. Super case à 106%, +86% d'apport à la croissance. Et on le met bien gros pour nos amis les myopes. Le search et les résals socials sont tellement balèzes qu'il font même péter les stats. Petite pensée à la case display qui fait carrément ralentir la croissance, wow. Et la case autres leviers, à 3%, on aurait presque pu la supprimer la pauvre. On avait bien supprimé une case à -12% tout à l'heure, pourquoi on ne le fait pas là ? C'est de l'abus de pouvoir de la part de la boîte grise. Faut faire gaffe à pas lui donner de baffes. On pouurait être jugé et aller en prison en moins d'une semaine. Et ouais ma gueule, ça s'passe comme ça ici, un ticket fast-pass de l'attraction tribunal, pour pouvoir passer devant les semaines d'attentes des autres qui sont en attente d'être jugés. Ah et c'est encore des pourcentages de milions d'€. C'est pas grave. Tfaçon j'ai plus d'yeux pour lire à présent.
+
+Bref, merci Marjojo pour ton commentaire sur yahoo.com : "Comment une part de la contribution peut etre superieure a 100%?" Je suis pas le seul à l'avoir remarqué. Ou alors c'est normal et c'est moi qui suis idiot parce qu'on peut le représenter comme ça. Chai pas.
+
+
+(Je tiens à m'excuser à tout lecteur. J'ai eu une journée difficile)
