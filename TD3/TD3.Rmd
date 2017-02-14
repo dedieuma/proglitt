@@ -6,8 +6,8 @@ output:
   pdf_document:
     number_sections: yes
   html_document: default
-geometry: margin=1.5in, top=0.5in, bottom=0.5in
 subtitle: A RStudio Demonstration and Statistical Analysis Draft
+geometry: margin=1.5in, top=0.5in, bottom=0.5in
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +55,7 @@ To read the synthetic ping-pong measurements, the code below reads the file `pp-
 
 ```{r}
 df <- read.csv("pp-synthetic.csv", header=TRUE, col.names=c("time"))
-head(df);
+tail(df);
 ```
 
 ## Overview of all the measurements
@@ -122,14 +122,29 @@ Which are slightly different from the true values.
 The measurements detailed in the introduction have been obtained for a number of different message sizes. We provide five of them here, with the following names:
 
 ```{bash}
-ls data/PP_size*.csv
+ls /home/andreas/Documents/proglitt/TD3/data/PP_size*.csv
 ```
 
 From 1 to 5 bytes. You should repeat all the steps of previous section using at least one of these files. Write your stastitical interpretation of the measurements. Here's how you can read one of them.
 
 ```{r}
-df1 <- read.csv("data/PP_size_1.csv");
+df1 <- read.csv("data/PP_size_3.csv");
 head(df1);
+```
+
+```{r}
+set.seed(42);
+times_test <- rnorm(n = 50, mean = 4, sd = 1.5);
+write.csv(times, "pp-synthetic.csv", row.names = FALSE);
+```
+
+```{r}
+summary(df1$time);
+```
+
+
+```{r, fig.width=5}
+hist(df1$time, breaks=1000000, xlab="Time (seconds)", main="Histogram OF MOI AHAHAHAH")
 ```
 
 # Iteration Duration of a Geophysics Parallel Application
