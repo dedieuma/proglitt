@@ -43,6 +43,7 @@ ggplot(data=pressure, aes(x=temperature, y=pressure)) +
 We can associate the size and color of points to other variables.
 
 ```{r}
+mtcars
 ggplot(data=mtcars, aes(x=disp, y=hp, size=mpg, color=wt)) + 
   geom_point();
 ```
@@ -79,3 +80,47 @@ Using facets to separate data.
 ```{r}
 ggplot(mtcars, aes(x=hp, y=mpg)) + facet_wrap(~gear) + geom_point();
 ```
+
+```{r}
+df1 <- read.csv("data/WWWusage.csv");
+df2 <- read.csv("data/lynx.csv");
+df <- read.csv("../TD3/data/IterDuration.csv");
+head(df);
+df1;
+df2;
+```
+
+
+```{r}
+ggplot(data=df1, aes(x=time, y=WWWusage)) + geom_point() + geom_line();
+ggplot(data=df2, aes(x = time, y= lynx))+ geom_point() + geom_line() + theme_bw();
+```
+
+```{r, fig.width=3, fig.height=5}
+summary(df2);
+ggplot(df2, aes(x=1, y=lynx)) + geom_boxplot() + geom_point(y=mean(df2$lynx));
+```
+
+
+```{r}
+
+summary(df$duration);
+hist(df$duration, breaks=20, xlab="duration(s)", main="Histo duration", include.lowest = FALSE, density = 100);
+
+```
+
+
+
+```{r}
+ggplot(data=df1)+geom_histogram(aes(x=WWWusage));
+```
+
+
+
+
+
+
+
+
+
+
