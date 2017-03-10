@@ -1,0 +1,54 @@
+---
+title: "TD6-exo"
+author: "Dedieu-Meille Andréas"
+date: "10 mars 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Fonction de simulation de dé : sample prend un vecteur en paramètre déterminant l'étendue des valeurs possibles, la nombre de fois qu'il fait le random (100 fois) et le remplacement de la valeur obtenue dans le pool
+```{r}
+dice <- function(faces = 6, n = 100)
+{
+  sample(x = seq(from=1, to = faces, by = 1), size = n, replace = TRUE);
+}
+
+df <- dice(6, 400);
+df;
+```
+
+
+
+Somme des sorties de 3 dés, puis affichage.
+
+```{r}
+experiment <- function(faces = 6, n=100000)
+{
+  dice1 <- dice(faces, n);
+  dice2 <- dice(faces, n);
+  dice3 <- dice(faces, n);
+  
+  data.frame(Dice1 = dice1, Dice2 = dice2, Dice3 = dice3) ;
+}
+experiment(6, 1000000) %>% mutate(somme = Dice1 + Dice2 + Dice3) %>% group_by(somme) %>% summarise(N=n()) %>% mutate(P=N/1E6) %>%
+  ggplot(aes(x=as.factor(somme), y=N)) + geom_point();
+
+```
+
+
+
+```{r}
+
+experiment(6,1E6) %>%
+  mutate(Sum = Dice1 + Dice2 + Dice3) %>%
+  ggplot(aes(x = as.factor(Sum))) +
+    geom_bar(aes(y = (..count..)/sum(..count..)), width=.3)+
+  xlab("Valeur de la somme")+ ylab("Fréquence")+
+  ylim(0, NA) +
+theme_bw()
+
+```

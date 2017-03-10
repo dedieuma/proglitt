@@ -1,0 +1,34 @@
+---
+title: "TD5-exo"
+author: "Quentin BLONDEL"
+date: "3 mars 2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(readr);
+df <- read_tsv (file = "dpt2015.txt",
+locale = locale(encoding = "ISO-8859-1"));
+```
+
+```{r}
+df;
+```
+
+Evolution du nombre de personne nommé Andréas au cours du temps :
+```{r}
+df %>% filter(preusuel=="ANDREAS") %>% filter(annais!="XXXX") %>% group_by(preusuel,annais) %>% summarize(N=sum(nombre)) %>% ggplot(aes(x=annais, y=N)) + geom_point() + theme_bw();
+```
+
+Evolution comparé du nombre de personne nommé Andréas, Pablo et Quentin au cours du temps :
+```{r}
+df %>% filter(preusuel %in% c("ANDREAS", "QUENTIN", "PABLO")) %>% filter(annais!="XXXX") %>% mutate(annais=as.integer(annais)) %>% group_by(preusuel,annais) %>% summarize(N=sum(nombre)) %>% ggplot(aes(x=annais, y=N, group=as.factor(preusuel), color=as.factor(preusuel))) + scale_x_continuous(breaks = seq(1900, 2020, 10)) + geom_point() + geom_line() + theme_bw();
+```
