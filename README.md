@@ -2,6 +2,19 @@
 
 Welcome to the Literate Programming public repository, part of the Miage L3.
 
+## Final Project
+
+- [Specification of the **Mini-Projet**](./Project.espec.md)
+  - G2
+    - Baptiste et Dylan: *Consommation d'alcool chez les etudiants portugais*
+    - Julien et Anthony: *Kaggle, Homicide Reports, 1980-2014*
+    - Etienne et Amandine: *Rapport sur le développement humain en 2015 dans le monde*
+    - Thibault et Thibault: *Les matchs de foot européen de 2008 a 2016*
+    - Sory et Ali: *Les indicateur de résultats des lycées 2014 enseignement général, technologique et professionnel*
+    - Alexandre et Badr: *Français de l'étranger 2001-2013*
+    - Moutameni et Marco: *Global Terrorism Database 1970 - 2016*
+  - G1
+
 ## Presentations
 
 - [General Introduction](./Presentation/0-Introduction/Transp-Prog-Lit-2017.pdf) - Course overview, goals, references and reproducibility
@@ -18,6 +31,7 @@ Welcome to the Literate Programming public repository, part of the Miage L3.
 4. [Combining RStudio and The Grammar of Graphics (of ggplot2)](./TD4.espec.md)
 5. [Data Manipulation with dplyr](./TD5.espec.md)
 6. [Galilée et le Paradoxe du Duc de Toscane](./TD6.espec.md)
+7. [Hypothesis Test : le Paradoxe du Duc de Toscane (la suite)](./TD7/TD7.Rmd)
 
 ## Additional resources
 
